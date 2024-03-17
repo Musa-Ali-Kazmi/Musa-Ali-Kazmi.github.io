@@ -7,21 +7,22 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #292929;
+            background-color: #150101;
             color: #FFFFFF;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #f56426;
-            padding: 20px 0;
+            background-color: #231d1b;
+            padding: 1px 0;
             text-align: center;
         }
         h1 {
-            font-size: 48px;
+            font-size: 38px;
             margin-bottom: 10px;
             color: #FFFFFF;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: cursive, monospace;
         }
         section {
             padding: 40px 20px;
@@ -30,12 +31,15 @@
         img {
             border-radius: 50%;
             margin-bottom: 20px;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+            width: 200px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+            border: 2px solid #333; /* Add border for better visual */
         }
         h2 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: #eb8f25;
+            color: #e1c4a4;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         p {
@@ -43,8 +47,28 @@
             line-height: 1.6;
             color: #CCCCCC;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+        li a {
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        li a:hover {
+            background-color: #333;
+            color: #fff;
+        }
         footer {
-            background-color: #e74242;
+            background-color: #582a2a;
             padding: 10px 0;
             text-align: center;
             position: fixed;
@@ -60,12 +84,18 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Syed Musa Ali Kazmi</h1>
     </header>
     <section>
-        <img src="DP1.jpeg" alt="Profile Picture" width="200">
+        <img src="DP-hike.jpg" alt="Profile Picture" width="200">
         <h2>About Me</h2>
         <p>Hi, I'm Musa Ali. I am currently pursuing a Bachelors in Computer Science from NUST, Islamabad.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/musa-ali-0858b6223/">LinkedIn</a></li>
+            <li><a href="https://github.com/Musa-Ali-Kazmi">GitHub</a></li>
+            <li><a href="https://www.instagram.com/your-instagram-profile">Instagram</a></li>
+            <li><a href="mailto:your-musaalikazmi@gmail.com">Gmail</a></li>
+        </ul>
     </section>
     <footer>
         <p>&copy; 2024 Musa Ali. All rights reserved.</p>
