@@ -66,6 +66,15 @@
         li a:hover {
             background-color: #333;
             color: #fff;
+            animation: bounce 0.5s infinite alternate;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
         }
         footer {
             background-color: #582a2a;
