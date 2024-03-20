@@ -64,17 +64,17 @@
             transition: all 0.3s ease;
         }
         li a:hover {
-            background-color: #333;
+            background-color: #333; 
             color: #fff;
-            animation: bounce 0.5s infinite alternate;
+            animation-name: bounce ;
+            animation-duration: 4s; 
         }
         @keyframes bounce {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-10px);
-            }
+            0%   {background-color:rgb(200, 5, 249); left:0px; top:0px;}
+            25%  {background-color:rgb(151, 226, 46); left:200px; top:0px;}
+            50%  {background-color:rgba(58, 58, 240, 0.796); left:200px; top:200px;}
+            75%  {background-color:rgb(214, 29, 29); left:0px; top:200px;}
+            100% {background-color:rgb(33, 226, 175); left:0px; top:0px;}
         }
         footer {
             background-color: #582a2a;
