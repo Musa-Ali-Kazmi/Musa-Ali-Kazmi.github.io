@@ -84,11 +84,50 @@
 
         #element {
             color: rgb(170, 107, 228)
-            }
-            .secondsection{
-                max-width: 80vw;
-                margin: auto;
-            }
+        }
+        .text-gray{
+            color:rgb(0, 235, 235)
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh
+        }
+        .secondsection h1{
+            font-size: 1.9rem
+        }
+        .secondsection .box{
+            background: white;
+            width: 80vh;
+            height: 2px;
+            margin: 56px;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top:75;
+            width: 150px;
+
+        }
+        .vertical-des{
+
+        }
     </style>
 </head>
 
@@ -96,7 +135,7 @@
 
     <header>
         <nav>
-            <div class="Left">Musa Portfolio</div>
+            <div class="Left">Musa's Portfolio</div>
             <div class="Right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -118,25 +157,61 @@
                 <span id="element"></span>
             </div>
             <div class="rightsection">
-                <img src="AI-BG.jpg" alt="">
+                <img src="brain3.png" alt="">
             </div>
         </section>
         <section class="secondsection">
+            <span class="text-gray">What I have done so far.</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="controller.png" alt="">
+                    <div class="vertical-title">Unity Developer (June 23-Aug 23)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, natus? Nihil eius enim architecto adipisci animi, doloremque ea quod ex odit tenetur sint.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="controller.png" alt="">
+                    <div class="vertical-title">Unity Developer (June 23-Aug 23)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, natus? Nihil eius enim architecto adipisci animi, doloremque ea quod ex odit tenetur sint.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="controller.png" alt="">
+                    <div class="vertical-title">Unity Developer (June 23-Aug 23)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, natus? Nihil eius enim architecto adipisci animi, doloremque ea quod ex odit tenetur sint.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="controller.png" alt="">
+                    <div class="vertical-title">Unity Developer (June 23-Aug 23)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, natus? Nihil eius enim architecto adipisci animi, doloremque ea quod ex odit tenetur sint.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thirdsection">
             <h1>Projects</h1>
             <ul>
                 <li>
-                    <h3>Project 1: Hand-drawn-Sketch-recognition-using-CNN</h3>
-                    <p> A project focused on developing a Convolutional Neural Network (CNN) model capable of recognizing
-                        hand-drawn sketches.</p>
+                    <h3>Medical Visual Question Answering</h3>
+                    <p> This project involves developing a medical visual question answering (VQA) system using the Path VQA dataset, 
+                        which includes histopathology images and related questions. Utilizing the ViLT (Vision and Language Transformer) model, 
+                        the system takes pathology or radiology images and answers questions related to it.
+                    </p>
                 </li>
                 <li>
-                    <h3>Project 2: Web-Scraping-and-PDF-Data-Extraction</h3>
+                    <h3>Web-Scraping-and-PDF-Data-Extraction</h3>
                     <p>This Python script performs PDF and web data scraping, transforms the extracted data, stores it in a
                         database, and provides API endpoints for data storage and downloading.</p>
                 </li>
                 <li>
-                    <h3>Project 3: Pakistan Express(2D game made in UNITY)</h3>
-                    <p>The Player has to safely navigate the trains to the station and prevent the trains from colliding.
+                    <h3>Urdu Text Sentiment Analysis</h3>
+                    <p>This project focuses on sentiment analysis of Urdu language text data using deep learning techniques. The dataset used in this project contains Urdu movie reviews collected from IMDb. The goal is to classify the sentiment of the reviews as positive or negative.
                     </p>
                 </li>
             </ul>
