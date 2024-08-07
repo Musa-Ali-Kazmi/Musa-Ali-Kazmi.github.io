@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Machine Learning Engineer</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="content">
+        <header>
+            <h1>Musa Ali</h1>
+            <p>Machine Learning Engineer</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/message">Leave a Message</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="{{ url_for('static', path='/images/profile.jpg') }}" alt="Your Profile Picture" class="profile-pic">
+                <p>Brief introduction about yourself and your expertise in machine learning.</p>
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Job Title - Company Name</h3>
+                    <p class="date">Date Range</p>
+                    <p>Description of your role and achievements.</p>
+                </div>
+                <!-- Add more work experiences as needed -->
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Project Name</h3>
+                    <p>Brief description of the project, technologies used, and outcomes.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </section>
+
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p>Email: your.email@example.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Musa Ali. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', path='/js/script.js') }}"></script>
+</body>
+</html>
+

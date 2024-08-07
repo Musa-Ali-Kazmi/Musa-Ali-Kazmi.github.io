@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Message - Your Name</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="content">
+        <header>
+            <h1>Leave a Message</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="message-form">
+                <h2>Your Message</h2>
+                <form action="/message" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="content">Message:</label>
+                    <textarea id="content" name="content" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <section id="messages">
+                <h2>Previous Messages</h2>
+                {% for message in messages %}
+                <div class="message">
+                    <h3>{{ message.name }}</h3>
+                    <p>{{ message.content }}</p>
+                </div>
+                {% endfor %}
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
